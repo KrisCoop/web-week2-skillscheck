@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    width: 100vw;
+}
+
+.topBar {
+    background-color: darkslategrey;
+    width: 800px;
+    height: 60px;
+    color: whitesmoke;
+}
+
+.company {
+    color: white;
+    left: 12px;
+    font-size: 20px;
+}
+
+.blackBox {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 350px;
+    width: 800px;
+    color: lightyellow;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mintBoxes {
+    display: flex;
+    justify-content: center;
+}
+
+.mintBox1 {
+    display: flex;
+    justify-content: center;
+    background-color: seagreen;
+    width: 100px;
+    height: 100px;
+}
+
+.orangeRectangles {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    width: 250px;
+    height: 100px;
+}
+
+.darkPurpBar {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 60px;
+    background-color: purple;
+
+}
+
+.textElephant {
+    display: inline-block;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 375px;
+    left: 10px;
+    height: 400px;
+}
+
+.elephant {
+    width: 375px;
+    height: 400px;
+}
+
+
