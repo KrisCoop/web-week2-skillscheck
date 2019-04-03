@@ -134,26 +134,38 @@ const myNumbers = [3, 55, 788, 2, 1]
 
 // First, let's use .map to create a new array that doubles each number. Call the new array 'doubled'
 
-let doubled = myNumbers.map((val, i, arr) => {
-	return val * 2;
-})
+let doubled = myNumbers.map((val, i, arr) => val * 2)
+
+console.log(doubled)
+
+// let doubled = myNumbers.map((val, i, arr) => {
+// 	return val * 2;
+// })
 
 
 //////////////////PROBLEM 15////////////////////
 
 // Now lets use .filter to only get the nubmer(s) greater than 100. Call the new array 'filtered'
 
-let filtered = myNumbers.filter(val => {
-	return val > 100;
-});
+let filtered = myNumbers.filter(val => val > 100);
+
+console.log(filtered)
+
+// let filtered = myNumbers.filter(val => {
+// 	return val > 100;
+// });
 
 //////////////////PROBLEM 16////////////////////
 
 // Next up, reduce to get the total of the array. call the new array 'total'
 
-let total = mNymbers.reduce((acc, val) => {
-	return acc + val;
-  }, 0);
+let total = myNumbers.reduce((acc, val) => acc + val);
+
+console.log(total)
+
+// var total = myNymbers.reduce((acc, val) => {
+// 	return acc + val;
+//   }, 0);
 
 //////////////////PROBLEM 17////////////////////
 
@@ -162,19 +174,29 @@ let total = mNymbers.reduce((acc, val) => {
 
 let myNumbersIndex = [];
 
-myNumbers.forEach(element => {
-  nyNumbersIndex.push(element);
-});
+myNumbers.forEach((element, index) => myNumbersIndex.push(index));
+
+console.log(myNumbersIndex)
+
+// array.forEach(function(currentValue, index, arr), thisValue)
+
+// myNumbers.forEach(element => myNumbersIndex.push(element));
+
+// myNumbers.forEach(element => {
+//   myNumbersIndex.push(element);
+// });
+
 
 //////////////////PROBLEM 18////////////////////
 
-// Did you know that George Foreman has five sons named George? Let's go ahead and change everyone's name in the notGeorge array to George using .map. 
+// Did you know that George Foreman has five sons named George? Let's go ahead and change everyone's name in the notGeorge array to George 
+//using .map. 
 // Call the new array 'forTheLoveOfGeorge'
 
 const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
-let forTheLoveofGeorge = notGeorge.map((val, i, arr) => {
-	
+let forTheLoveOfGeorge = notGeorge.map((val, i, arr) => {
+	return val = "George"
 })
 
 //////////////////PROBLEM 19////////////////////
@@ -190,7 +212,7 @@ const people = [
 ]
 
 let enemies = people.filter((val, i, arr) => {
-	return val.friend === true;
+	return val.friend === false;
 })
 
 //////////////////PROBLEM 20////////////////////
@@ -199,4 +221,4 @@ let enemies = people.filter((val, i, arr) => {
 
 let totallyAwesome = people.reduce((acc, val) => {
 	return acc + val.awesomeLevel;
-});
+}, 0);

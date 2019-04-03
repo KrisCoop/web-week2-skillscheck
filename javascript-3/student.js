@@ -42,7 +42,7 @@ function removeItem(index) {
 // If the number of groceries is equal to one, return the string '1 item'. For numbers between 1 and 5, return the string 'NUMBER items' with number 
 // replacing the number of items
 
-function checkGroceryCount() => {
+function checkGroceryCount() {
     let number = groceries.length;
     if (groceries.length >= 5) {
         return 'That looks like a big trip'
